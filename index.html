@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU="
+      crossorigin="anonymous"
+    />
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .header {
+        background-color: darkturquoise;
+        height: 40px;
+        width: 100%;
+        position: fixed;
+      }
+      .navigation {
+        height: 40px;
+        position: relative;
+      }
+      .nav-item {
+        display: inline;
+        line-height: normal;
+        margin-left: 16px;
+        color: white;
+      }
+      .content {
+        background-color: beige;
+        height: 5000px;
+      }
+      .head {
+        height: 200px;
+        width: 200px;
+        position: relative;
+        top: calc(50vh - 100px);
+        margin-left: auto;
+        margin-right: auto;
+        /* margin-top: auto;
+        margin-bottom: auto;*/
+
+        margin: auto;
+
+        background-color: aquamarine;
+      }
+      .ear {
+        height: 60px;
+        width: 40px;
+        background-color: brown;
+        display: inline-block;
+      }
+      .ear-left {
+        top: -60px;
+        left: -40px;
+
+        position: absolute;
+      }
+      .ear-right {
+        top: -60px;
+        left: -40px;
+        position: absolute;
+      }
+      .eye {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: grey;
+        display: inline-block;
+      }
+      .eye-left {
+        padding-left: 40px;
+        padding-top: 80px;
+        position: absolute;
+      }
+      .eye-right {
+        padding-right: 40px;
+        padding-top: 80px;
+        position: absolute;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="navigation">
+        <ul class="nav-list">
+          <li class="nav-item">Home</li>
+          <li class="nav-item">Products</li>
+          <li class="nav-item">Contacts</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content">
+      <div class="head">
+        <div class="ear ear_right"></div>
+        <div class="ear ear_left"></div>
+        <div class="eye eye_right"></div>
+        <div class="eye eye_left"></div>
+      </div>
+    </main>
+  </body>
+</html>
