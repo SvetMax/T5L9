@@ -31,7 +31,6 @@
         display: inline-block;
         color: white;
         margin-left: 16px;
-        
       }
       .content {
         background-color: beige;
@@ -41,19 +40,45 @@
         height: 200px;
         width: 200px;
         background-color: aquamarine;
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        position: absolute;
+        top: calc(50% - 100px);
+        left: calc(50% - 100px);
       }
       .ear {
         width: 40px;
         height: 60px;
         background-color: brown;
+        position: absolute;
+        
       }
-      .ear-left {
-        position: relative;
-        left: -40px;
+      .ear_left {
+        margin-top: -60px;
+        margin-left: -40px;
+      }
+     .ear_right {
+       margin-top: -60px;
+        margin-left: 200px;
+      }
+      .eye {
+          height: 30px;
+          width: 30px;
+          border-radius: 50%;
+          background-color: grey;
+          position: absolute;
+          
+          
+      }
+      .eye_left {
+          
+          margin-top: 80px;
+          margin-left: 40px;
+            position: absolute;
+      }
+      .eye_right {
+          
+          margin-top: 80px;
+          margin-left: 130px;
+            position: absolute;
       }
     </style>
   </head>
